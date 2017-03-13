@@ -32,6 +32,16 @@ plt.show()
 #Box plot
 sns.boxplot(x="class", y="SepalLengthCm", data=dataset)
 plt.show()
+#Box plot2
+dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+
+#histogram
+dataset.hist()
+plt.show()
+
+#Scatter plot matrix
+scatter_matrix(dataset)
+plt.show()
 
 #box plot with scatter points
 ax = sns.boxplot(x="class", y="PetalLengthCm", data=dataset)
